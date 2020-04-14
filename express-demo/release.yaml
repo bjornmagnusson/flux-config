@@ -12,3 +12,6 @@ spec:
     repository: https://h.cfcr.io/bjornmagnusson/default
     name: express-demo
     version: v0.2.0
+  values:
+    image:
+      tag: ad1b4a7396fbdebb3988233fe9b7f94aa683547d
