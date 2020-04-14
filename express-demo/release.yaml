@@ -1,0 +1,14 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: express-demo
+  namespace: express-demo
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: express-demo
+  chart:
+    repository: https://h.cfcr.io/bjornmagnusson/default
+    name: express-demo
+    version: v0.2.0
