@@ -15,3 +15,5 @@ spec:
   values:
     image:
       tag: sha-388223d
+    ingress:
+      enabled: true  
