@@ -21,6 +21,6 @@ spec:
       versions: "v3"
     image:
       repository: raspbernetes/helm-operator
-      tag: v1.0.0-rc9
+      tag: fb3a8dbf86748c0a987bf7657cb59e840c6c651d
     prometheus:
       enabled: false
