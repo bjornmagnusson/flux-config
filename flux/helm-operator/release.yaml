@@ -1,0 +1,26 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: helm-operator
+  namespace: flux
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: helm-operator
+  chart:
+    repository: https://charts.fluxcd.io
+    name: helm-operator
+    version: v0.2.0
+  values:
+    createCRD: false
+    git:
+      ssh:
+        secretName: flux-git-deploy
+    helm:
+      versions: "v3"
+    image:
+      repository: raspbernetes/helm-operator
+      tag: v1.0.0-rc9
+    prometheus:
+      enabled: false
