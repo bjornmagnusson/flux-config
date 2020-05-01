@@ -20,11 +20,11 @@ spec:
       branch: master
     image:
       repository: raspbernetes/flux
-      tag: 1.18.0
+      tag: fb3a8dbf86748c0a987bf7657cb59e840c6c651d
     syncGarbageCollection:
       enabled: true
       dry: false
     registry:
-      disableScanning: false  
+      disableScanning: false
     prometheus:
       enabled: false
