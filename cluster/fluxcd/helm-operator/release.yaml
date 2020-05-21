@@ -11,14 +11,5 @@ spec:
     name: helm-operator
     version: 1.0.2
   values:
-    createCRD: false
-    git:
-      ssh:
-        secretName: flux-git-deploy
     helm:
       versions: "v3"
-    image:
-      repository: raspbernetes/helm-operator
-      tag: v1.0.0-rc9
-    prometheus:
-      enabled: false
