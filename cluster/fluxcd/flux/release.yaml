@@ -15,7 +15,7 @@ spec:
       create: false
     git:
       url: "git@github.com:bjornmagnusson/flux-config.git"
-      branch: master
+      branch: arm
     image:
       repository: raspbernetes/flux
       tag: 1.19.0
