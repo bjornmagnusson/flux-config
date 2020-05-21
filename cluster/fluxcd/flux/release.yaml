@@ -11,18 +11,8 @@ spec:
     name: flux
     version: 1.3.0
   values:
-    helmOperator:
-      create: false
     git:
       url: "git@github.com:bjornmagnusson/flux-config.git"
       branch: master
-    image:
-      repository: raspbernetes/flux
-      tag: 1.19.0
     syncGarbageCollection:
       enabled: true
-      dry: false
-    registry:
-      disableScanning: false
-    prometheus:
-      enabled: false
