@@ -12,7 +12,8 @@ spec:
     version: 1.3.0
   values:
     git:
-      url: "git@github.com:bjornmagnusson/flux-config.git"
+      url: "https://github.com/bjornmagnusson/flux-config.git"
       branch: master
+      readonly: true
     syncGarbageCollection:
       enabled: true
