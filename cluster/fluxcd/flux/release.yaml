@@ -19,8 +19,5 @@ spec:
       tag: 1.19.0
     syncGarbageCollection:
       enabled: true
-      dry: false
-    registry:
-      disableScanning: false
     prometheus:
       enabled: false
