@@ -15,6 +15,6 @@ spec:
   values:
     image:
       repository: bjornmagnusson/express-demo
-      tag: df78c03769dd7942254302876776b3680736ad22
+      tag: 904abd8fdb77cd0a3f101d170e5b33024d6edd0e
     ingress:
       enabled: true
