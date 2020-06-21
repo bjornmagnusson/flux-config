@@ -16,5 +16,3 @@ spec:
     image:
       repository: bjornmagnusson/regionalmap
       tag: 4c4d942c5cfefcfdbb60c7a55dfc38742a71b44e
-    ingress:
-      enabled: true
