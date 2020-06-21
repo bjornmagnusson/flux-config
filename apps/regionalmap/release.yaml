@@ -15,4 +15,4 @@ spec:
   values:
     image:
       repository: bjornmagnusson/regionalmap
-      tag: 5899935db6d5c07d3a1da02eda9c1c15438f3729
+      tag: 8b290932fd2d94ace8ff13004fea7fd8265d57c7
