@@ -1,0 +1,20 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: regionalmap
+  namespace: regionalmap
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: regionalmap
+  chart:
+    repository: https://h.cfcr.io/bjornmagnusson/default
+    name: regionalmap
+    version: 0.1.0
+  values:
+    image:
+      repository: bjornmagnusson/regionalmap
+      tag: 4c4d942c5cfefcfdbb60c7a55dfc38742a71b44e
+    ingress:
+      enabled: true
