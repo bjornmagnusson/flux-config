@@ -16,7 +16,6 @@ spec:
       branch: arm
     image:
       repository: raspbernetes/flux
-      tag: 1.19.0
     syncGarbageCollection:
       enabled: true
     prometheus:

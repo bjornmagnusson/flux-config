@@ -9,7 +9,7 @@ spec:
   chart:
     repository: https://charts.fluxcd.io
     name: helm-operator
-    version: 1.0.2
+    version: 1.1.0
   values:
     createCRD: false
     git:
@@ -19,6 +19,5 @@ spec:
       versions: "v3"
     image:
       repository: raspbernetes/helm-operator
-      tag: v1.0.0-rc9
     prometheus:
       enabled: false
