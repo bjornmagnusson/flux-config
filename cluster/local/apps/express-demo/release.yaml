@@ -17,5 +17,5 @@ spec:
       repository: bjornmagnusson/express-demo
       tag: 988db93b82259e1cd4756bace4e0c9845b25f85d
     ingress:
-      enabled: true 
+      enabled: false 
   interval: 1m0s
