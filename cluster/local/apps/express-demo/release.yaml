@@ -1,20 +1,20 @@
 ---
-apiVersion: helm.fluxcd.io/v1
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: express-demo
-  namespace: express-demo
-  annotations:
-    fluxcd.io/automated: "true"
+  name: regionalmap
+  namespace: flux-system
 spec:
-  releaseName: express-demo
   chart:
-    repository: https://h.cfcr.io/bjornmagnusson/default
-    name: express-demo
-    version: v0.2.0
-  values:
-    image:
-      repository: bjornmagnusson/express-demo
-      tag: 988db93b82259e1cd4756bace4e0c9845b25f85d
-    ingress:
-      enabled: true
+    spec:
+      chart: express-demo
+      version: v0.2.0
+      sourceRef:
+        name: "codefresh"
+      values:
+        image:
+          repository: bjornmagnusson/express-demo
+          tag: 988db93b82259e1cd4756bace4e0c9845b25f85d
+        ingress:
+          enabled: true 
+  interval: 1m0s
