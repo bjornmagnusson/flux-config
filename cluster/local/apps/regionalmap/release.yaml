@@ -9,7 +9,8 @@ spec:
     spec:
       chart: regionalmap
       sourceRef:
-        name: "codefresh"
+        kind: HelmRepository
+        name: codefresh
   values:
     image:
       repository: bjornmagnusson/regionalmap

@@ -10,7 +10,8 @@ spec:
       chart: express-demo
       version: v0.2.0
       sourceRef:
-        name: "codefresh"
+        kind: HelmRepository
+        name: codefresh
   values:
     image:
       repository: bjornmagnusson/express-demo
