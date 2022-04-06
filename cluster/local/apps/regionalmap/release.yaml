@@ -10,8 +10,8 @@ spec:
       chart: regionalmap
       sourceRef:
         name: "codefresh"
-      values:
-        image:
-          repository: bjornmagnusson/regionalmap
-          tag: 8b290932fd2d94ace8ff13004fea7fd8265d57c7  
+  values:
+    image:
+      repository: bjornmagnusson/regionalmap
+      tag: 8b290932fd2d94ace8ff13004fea7fd8265d57c7  
   interval: 1m0s
